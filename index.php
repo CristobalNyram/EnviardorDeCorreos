@@ -14,34 +14,27 @@
         Envia un correo electronico aquí
     </h1>
     </center>
-    <div class="alert">
-            <span>Error.</span>
-    </div>
 
-    <div class="exito">
-            <span>Sin problemas.</span>
-    </div>
-
-    <form class="form-style-4" action="" method="post">
+    <form class="form-style-4" action="./server.php" method="post">
 
                 <label for="field1">
-                <span>Tu nombre</span><input type="text" name="field1" required="true" />
+                <span>Tu nombre</span><input type="text" name="name"  required="true" />
                 </label>
 
                 <label for="field2">
-                <span>Correo electronico</span><input type="email" name="field2" required="true" />
+                <span>Correo electronico</span><input type="email" name="email" required="true" />
                 </label>
 
                 <label for="field3">
-                <span>Tema de platica</span><input type="text" name="field3" required="true" />
+                <span>Tema de platica</span><input type="text" name="topic" required="true" />
                 </label>
 
                 <label for="field4">
-                <span>Contenido del mensaje</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                <span>Contenido del mensaje</span><textarea onkeyup="adjust_textarea(this)" name="content" required="true"></textarea>
                 </label>
 
                 <label>
-                <span> </span><input type="submit" value="Enviar el correo" />
+                <span> </span><input type="submit" value="Enviar el correo" name="form_button" />
                 </label>
     </form>
 </body>
